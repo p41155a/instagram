@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="44H-Ws-Yjg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="son-NX-54s">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="44H-Ws-Yjg" customClass="SignupViewController" customModule="Social_Network_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Am-kA-fWk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrL-0Y-yb0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYg-dE-lEY">
+                                        <rect key="frame" x="55" y="55" width="304" height="190"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram-logo" translatesAutoresizingMaskIntoConstraints="NO" id="gbR-oh-E36">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="GUM-SD-Ey2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구들의 사진과 동영상을 보려면 가입하세요" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFV-pi-1Xj">
+                                                <rect key="frame" x="0.0" y="140" width="304" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="cFV-pi-1Xj" secondAttribute="bottom" id="BIO-CU-7gu"/>
+                                            <constraint firstItem="gbR-oh-E36" firstAttribute="leading" secondItem="RYg-dE-lEY" secondAttribute="leading" id="Na8-66-Fwq"/>
+                                            <constraint firstItem="cFV-pi-1Xj" firstAttribute="leading" secondItem="RYg-dE-lEY" secondAttribute="leading" id="UjG-q5-BE7"/>
+                                            <constraint firstAttribute="trailing" secondItem="gbR-oh-E36" secondAttribute="trailing" id="fPd-gI-kZL"/>
+                                            <constraint firstAttribute="trailing" secondItem="cFV-pi-1Xj" secondAttribute="trailing" id="jIx-0u-kwM"/>
+                                            <constraint firstItem="cFV-pi-1Xj" firstAttribute="top" secondItem="gbR-oh-E36" secondAttribute="bottom" constant="40" id="qdP-xm-yCp"/>
+                                            <constraint firstItem="gbR-oh-E36" firstAttribute="top" secondItem="RYg-dE-lEY" secondAttribute="top" id="tPT-2P-ADr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51795560294428467" green="0.64766539404857815" blue="0.84267407655715942" alpha="0.76158497431506844" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="RYg-dE-lEY" firstAttribute="centerX" secondItem="lrL-0Y-yb0" secondAttribute="centerX" id="52a-zF-mEd"/>
+                                    <constraint firstAttribute="height" constant="300" id="8zY-Ab-Qe1"/>
+                                    <constraint firstItem="RYg-dE-lEY" firstAttribute="centerY" secondItem="lrL-0Y-yb0" secondAttribute="centerY" id="IyF-RO-NFP"/>
+                                    <constraint firstAttribute="bottom" secondItem="RYg-dE-lEY" secondAttribute="bottom" constant="55" id="TR4-7i-Qvm"/>
+                                    <constraint firstItem="RYg-dE-lEY" firstAttribute="leading" secondItem="lrL-0Y-yb0" secondAttribute="leading" constant="55" id="tHH-fa-VFI"/>
+                                    <constraint firstItem="RYg-dE-lEY" firstAttribute="top" secondItem="lrL-0Y-yb0" secondAttribute="top" constant="55" id="x8Q-Sa-6IZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="RYg-dE-lEY" secondAttribute="trailing" constant="55" id="y0a-DJ-RNT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ees-kY-GI7">
+                                <rect key="frame" x="0.0" y="806" width="414" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Aa-08-fsG">
+                                        <rect key="frame" x="122" y="0.0" width="170.5" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 계정이 있으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDB-KS-Ysb">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="56"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-3C-f2R">
+                                                <rect key="frame" x="131.5" y="0.0" width="39" height="56"/>
+                                                <state key="normal" title="로그인"/>
+                                                <connections>
+                                                    <action selector="loginButtonClick:" destination="44H-Ws-Yjg" eventType="touchUpInside" id="7RJ-Tx-kNb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zar-lf-grN" userLabel="buttomLine">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="itv-13-oe6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1Aa-08-fsG" secondAttribute="bottom" id="0No-9V-T28"/>
+                                    <constraint firstAttribute="height" constant="56" id="GhV-Zz-Lwh"/>
+                                    <constraint firstItem="1Aa-08-fsG" firstAttribute="top" secondItem="ees-kY-GI7" secondAttribute="top" id="H6q-tH-WA5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zar-lf-grN" secondAttribute="trailing" id="Zw0-VT-Laj"/>
+                                    <constraint firstItem="Zar-lf-grN" firstAttribute="leading" secondItem="ees-kY-GI7" secondAttribute="leading" id="nbO-0s-Kvg"/>
+                                    <constraint firstItem="1Aa-08-fsG" firstAttribute="centerX" secondItem="ees-kY-GI7" secondAttribute="centerX" id="ufn-c2-lPr"/>
+                                    <constraint firstItem="Zar-lf-grN" firstAttribute="top" secondItem="ees-kY-GI7" secondAttribute="top" id="yVa-gh-4ns"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXk-b9-oaz">
+                                <rect key="frame" x="97.5" y="374" width="219" height="30"/>
+                                <state key="normal" title="휴대폰 번호 또는 이메일  주소로 가입"/>
+                                <connections>
+                                    <action selector="signupButtonClick:" destination="44H-Ws-Yjg" eventType="touchUpInside" id="H8p-eB-t24"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ees-kY-GI7" firstAttribute="trailing" secondItem="GhT-Fn-5Ad" secondAttribute="trailing" id="5a0-NJ-ENY"/>
+                            <constraint firstItem="DXk-b9-oaz" firstAttribute="centerX" secondItem="2Am-kA-fWk" secondAttribute="centerX" id="Bu9-oM-XO9"/>
+                            <constraint firstItem="lrL-0Y-yb0" firstAttribute="leading" secondItem="GhT-Fn-5Ad" secondAttribute="leading" id="MOZ-c0-Clx"/>
+                            <constraint firstItem="lrL-0Y-yb0" firstAttribute="trailing" secondItem="GhT-Fn-5Ad" secondAttribute="trailing" id="R6f-fa-PdY"/>
+                            <constraint firstItem="DXk-b9-oaz" firstAttribute="top" secondItem="lrL-0Y-yb0" secondAttribute="bottom" constant="30" id="Xsq-Fh-G9P"/>
+                            <constraint firstItem="GhT-Fn-5Ad" firstAttribute="bottom" secondItem="ees-kY-GI7" secondAttribute="bottom" id="ql3-o8-qX4"/>
+                            <constraint firstItem="ees-kY-GI7" firstAttribute="leading" secondItem="GhT-Fn-5Ad" secondAttribute="leading" id="qti-84-Nen"/>
+                            <constraint firstItem="lrL-0Y-yb0" firstAttribute="top" secondItem="GhT-Fn-5Ad" secondAttribute="top" id="rB0-2i-KRB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GhT-Fn-5Ad"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rcl-gb-CY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="instagram-logo" width="914" height="362"/>
+    </resources>
+</document>

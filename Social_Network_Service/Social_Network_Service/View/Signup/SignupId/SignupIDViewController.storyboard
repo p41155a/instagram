@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xyG-lL-hw7">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SignupID View Controller-->
+        <scene sceneID="5vs-TW-kqw">
+            <objects>
+                <viewController storyboardIdentifier="SignupIDViewController" id="xyG-lL-hw7" customClass="SignupIDViewController" customModule="Social_Network_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hbT-WP-OEx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호 또는 이메일 주소 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-SN-8sd">
+                                <rect key="frame" x="14.5" y="0.0" width="291" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugf-4s-h2j">
+                                <rect key="frame" x="30" y="59" width="260" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgp-D1-SsD">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijM-y9-esL">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBg-as-tC5" userLabel="UnderView">
+                                                        <rect key="frame" x="0.0" y="58" width="130" height="2"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="2" id="3tz-YJ-APE"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilQ-gb-mZg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="58"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <state key="normal" title="전화번호">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="phoneButtonClick:" destination="xyG-lL-hw7" eventType="touchUpInside" id="1Ns-j7-Skm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="XBg-as-tC5" secondAttribute="bottom" id="FS4-Aq-M6b"/>
+                                                    <constraint firstItem="XBg-as-tC5" firstAttribute="top" secondItem="ilQ-gb-mZg" secondAttribute="bottom" id="GuV-bN-HUP"/>
+                                                    <constraint firstItem="ilQ-gb-mZg" firstAttribute="top" secondItem="ijM-y9-esL" secondAttribute="top" id="KbD-dD-Zg3"/>
+                                                    <constraint firstItem="ilQ-gb-mZg" firstAttribute="leading" secondItem="ijM-y9-esL" secondAttribute="leading" id="Mo6-y8-Sec"/>
+                                                    <constraint firstItem="XBg-as-tC5" firstAttribute="leading" secondItem="ijM-y9-esL" secondAttribute="leading" id="OOq-lP-RnG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XBg-as-tC5" secondAttribute="trailing" id="edG-jG-hVv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ilQ-gb-mZg" secondAttribute="trailing" id="hg2-rH-E98"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onj-SZ-RgP">
+                                                <rect key="frame" x="130" y="0.0" width="130" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4S-h8-3ZX" userLabel="UnderView">
+                                                        <rect key="frame" x="0.0" y="58" width="130" height="2"/>
+                                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="LoV-PA-Uyf"/>
+                                                            <constraint firstAttribute="height" constant="2" id="rel-OB-YBn"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-an-AYf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="58"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <state key="normal" title="이메일">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="emailButtonClick:" destination="xyG-lL-hw7" eventType="touchUpInside" id="GJI-We-IWI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="S4S-h8-3ZX" secondAttribute="trailing" id="3gT-bQ-sJ5"/>
+                                                    <constraint firstAttribute="bottom" secondItem="S4S-h8-3ZX" secondAttribute="bottom" id="8sn-LN-90j"/>
+                                                    <constraint firstItem="S4S-h8-3ZX" firstAttribute="top" secondItem="gDs-an-AYf" secondAttribute="bottom" id="B5d-sM-wkP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gDs-an-AYf" secondAttribute="trailing" id="B6g-eN-JzB"/>
+                                                    <constraint firstItem="gDs-an-AYf" firstAttribute="top" secondItem="onj-SZ-RgP" secondAttribute="top" id="Rxd-DI-WqT"/>
+                                                    <constraint firstItem="S4S-h8-3ZX" firstAttribute="leading" secondItem="onj-SZ-RgP" secondAttribute="leading" id="caG-dL-WsA"/>
+                                                    <constraint firstItem="gDs-an-AYf" firstAttribute="leading" secondItem="onj-SZ-RgP" secondAttribute="leading" id="lP0-my-E95"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="onj-SZ-RgP" firstAttribute="width" secondItem="ijM-y9-esL" secondAttribute="width" id="Urq-Tg-Jnt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6De-wB-ILB"/>
+                                    <constraint firstItem="qgp-D1-SsD" firstAttribute="leading" secondItem="ugf-4s-h2j" secondAttribute="leading" id="Bbu-aH-ZSh"/>
+                                    <constraint firstAttribute="trailing" secondItem="qgp-D1-SsD" secondAttribute="trailing" id="ohV-KD-7CM"/>
+                                    <constraint firstItem="qgp-D1-SsD" firstAttribute="width" secondItem="ugf-4s-h2j" secondAttribute="width" id="pI6-V1-ixB"/>
+                                    <constraint firstItem="qgp-D1-SsD" firstAttribute="top" secondItem="ugf-4s-h2j" secondAttribute="top" id="syT-jl-CcB"/>
+                                    <constraint firstAttribute="bottom" secondItem="qgp-D1-SsD" secondAttribute="bottom" id="zJo-0i-Jrg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7c-7v-UbK">
+                                <rect key="frame" x="0.0" y="119" width="320" height="449"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-Xp-6EJ">
+                                <rect key="frame" x="0.0" y="512" width="320" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jA8-Ye-cxs">
+                                        <rect key="frame" x="75" y="0.0" width="170.5" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 계정이 있으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j0-Ff-Pr7">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="56"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVY-4e-eBE">
+                                                <rect key="frame" x="131.5" y="0.0" width="39" height="56"/>
+                                                <state key="normal" title="로그인"/>
+                                                <connections>
+                                                    <action selector="loginButtonClick:" destination="xyG-lL-hw7" eventType="touchUpInside" id="7No-On-w0E"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xW0-Vf-AFu" userLabel="buttomLine">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Ifm-R7-78l"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="jA8-Ye-cxs" firstAttribute="top" secondItem="p3e-Xp-6EJ" secondAttribute="top" id="5Pg-O9-mXJ"/>
+                                    <constraint firstAttribute="height" constant="56" id="FzY-Nt-sUz"/>
+                                    <constraint firstItem="xW0-Vf-AFu" firstAttribute="top" secondItem="p3e-Xp-6EJ" secondAttribute="top" id="Jhc-Mk-iOn"/>
+                                    <constraint firstAttribute="trailing" secondItem="xW0-Vf-AFu" secondAttribute="trailing" id="LR6-Rj-rxu"/>
+                                    <constraint firstItem="xW0-Vf-AFu" firstAttribute="leading" secondItem="p3e-Xp-6EJ" secondAttribute="leading" id="cdF-cH-2Kf"/>
+                                    <constraint firstAttribute="bottom" secondItem="jA8-Ye-cxs" secondAttribute="bottom" id="g3L-TU-tRs"/>
+                                    <constraint firstItem="jA8-Ye-cxs" firstAttribute="centerX" secondItem="p3e-Xp-6EJ" secondAttribute="centerX" id="lM4-jg-ZLO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KS3-SN-8sd" firstAttribute="centerX" secondItem="hbT-WP-OEx" secondAttribute="centerX" id="3bt-e1-s64"/>
+                            <constraint firstItem="ugf-4s-h2j" firstAttribute="top" secondItem="KS3-SN-8sd" secondAttribute="bottom" constant="30" id="6Ms-2q-FfI"/>
+                            <constraint firstItem="KS3-SN-8sd" firstAttribute="top" secondItem="geT-HI-GDI" secondAttribute="top" id="BLH-1M-a5L"/>
+                            <constraint firstItem="ugf-4s-h2j" firstAttribute="leading" secondItem="geT-HI-GDI" secondAttribute="leading" constant="30" id="Dln-Bx-hHX"/>
+                            <constraint firstItem="R7c-7v-UbK" firstAttribute="top" secondItem="ugf-4s-h2j" secondAttribute="bottom" id="NTy-za-9BX"/>
+                            <constraint firstItem="geT-HI-GDI" firstAttribute="trailing" secondItem="R7c-7v-UbK" secondAttribute="trailing" id="O8R-HB-IIc"/>
+                            <constraint firstItem="geT-HI-GDI" firstAttribute="bottom" secondItem="R7c-7v-UbK" secondAttribute="bottom" id="TzE-fy-kCW"/>
+                            <constraint firstAttribute="trailing" secondItem="p3e-Xp-6EJ" secondAttribute="trailing" id="YIo-fR-tsX"/>
+                            <constraint firstItem="geT-HI-GDI" firstAttribute="bottom" secondItem="p3e-Xp-6EJ" secondAttribute="bottom" id="gaa-yw-c4F"/>
+                            <constraint firstItem="p3e-Xp-6EJ" firstAttribute="leading" secondItem="geT-HI-GDI" secondAttribute="leading" id="gnq-Gh-Wft"/>
+                            <constraint firstItem="R7c-7v-UbK" firstAttribute="leading" secondItem="geT-HI-GDI" secondAttribute="leading" id="kvN-JH-yb3"/>
+                            <constraint firstItem="geT-HI-GDI" firstAttribute="trailing" secondItem="ugf-4s-h2j" secondAttribute="trailing" constant="30" id="qKt-Da-My5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="geT-HI-GDI"/>
+                    </view>
+                    <connections>
+                        <outlet property="SignIDView" destination="R7c-7v-UbK" id="Vla-f5-jOX"/>
+                        <outlet property="emailButton" destination="gDs-an-AYf" id="ul9-6Q-c4i"/>
+                        <outlet property="emailUnderView" destination="S4S-h8-3ZX" id="acJ-PE-BYO"/>
+                        <outlet property="phoneButton" destination="ilQ-gb-mZg" id="tBw-39-iyc"/>
+                        <outlet property="phoneUnderView" destination="XBg-as-tC5" id="SOP-eK-oAT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iu-fo-LN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+</document>
